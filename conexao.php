@@ -43,7 +43,7 @@ function excluirPessoa() {
 
 function selectAllPessoa() {
     $banco = abrirBanco();
-    $sql = "SELECT * FROM pessoa ORDER BY nome";
+    $sql = "SELECT * FROM pessoa ORDER BY telefone";
     $resultado = $banco->query($sql);
     $banco->close();
     $grupo = array();
